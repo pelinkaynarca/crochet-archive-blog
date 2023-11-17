@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --accent1BgColor: rgb(205, 216, 196);
+    --accent2BgColor: rgb(155, 191, 203);
+    --borderColor: rgb(131, 156, 153);
+    --bodyBgColor: rgb(249, 238, 221);
+    --postBgColor: rgb(255, 255, 255);
+    --bodyTextColor: rgb(101, 119, 122);
+    --postTitleColor: rgb(76, 101, 105);
+    --postTitleBgColor: rgb(255, 240, 205);
+  }
+
+  #sidebarTitleText:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--borderColor);
+  }

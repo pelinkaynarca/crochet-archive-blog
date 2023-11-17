@@ -1,0 +1,19 @@
+{
+  "name": "crochet-diary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindrw": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  }
+}
