@@ -13,15 +13,15 @@
         rel="stylesheet">
     </head>
     
-    <body class="p-0 m-0 bg-bodyBgColor font-primary text-bodyTextColor">
+    <body class="p-0 m-0 bg-bodyBgColor font-primary text-accent1TextColor">
         <svg width="0" height="0">
             <defs>
                 <path id="circleTextPath"
                     d="M97,166c-41.906,0-76-34.093-76-76 c0-41.906,31.094-76,76-76c27.191,0,51.092,5.353,65.524,35.88">
                 </path>
             </defs>
-            </svg>
-            <div id="container" class="box-border block w-screen h-screen mt-20">
+        </svg>
+        <div id="container" class="box-border block w-full h-full mt-20">
             <!-- sidebar -->
             <aside id="sidebar" class="w-[240px] h-[560px] fixed left-44 flex flex-col items-center text-lg">
                 <!-- sidebar content goes here -->
@@ -52,11 +52,13 @@
                         </a>
                         <!-- JS ile basınca diğer linkleri açsın!! -->
                         <a href=""
-                            class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor" id="sbSocialsButton">
+                            class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor"
+                            id="sbSocialsButton">
                             <img src="images/socials.png" alt="home" class="w-3.5">
                         </a>
                         <div class="">
-                        <input type="text" placeholder="search..." class="w-32 px-2 border-2 rounded-full border-borderColor bg-accent2BgColor">
+                            <input type="text" placeholder="search..."
+                                class="w-32 px-2 text-base border-2 rounded-full text-accent2TextColor placeholder-accent2TextColor border-borderColor bg-accent2BgColor">
                         </div>
                         <a href="/"
                             class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor">
@@ -76,105 +78,222 @@
             <!-- end of sidebar -->
             <!-- posts -->
             <section class="absolute left-[650px] w-[540px] top-20 flex flex-col text-l min-h-full">
-                <div id="postTabContainer" class="relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor" id="">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">-</span>
+                <div class="postTabContainer relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer text-accent2TextColor bg-accent2BgColor">
+                        <span class="py-0 pl-3 pr-5 postTabText shadow-tabUnfocused">-</span>
                     </label>
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor"
-                        id="postDetailsTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">details</span>
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer text-accent2TextColor bg-accent2BgColor postDetailsTabButton">
+                        <span class="py-0 pl-3 pr-5 detailsTabText shadow-tabUnfocused">details</span>
+                    </label>
+                    <label for="" class="relative flex-initial ml-3 border-r-2 border-double cursor-pointer z-5 bg-accent1BgColor border-borderColor postContentTabButton">
+                        <span class="py-0 pl-3 pr-5 mainTabText shadow-tabFocused">07-07-23</span>
+                    </label>
+                </div>
+                <div class="relative flex flex-col w-full p-2 mb-20 postBodyContainer min-h-fit shadow-postBorder bg-accent1BgColor">
+                    <div class="postMainSection">
+                        <div class="flex flex-row items-center justify-center w-full h-8 mb-2 postTitle">
+                            <img src="images/yarn.png" alt="" class="mx-2">
+                            <span class="flex items-center w-full px-4 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">duck with a hat and bag</span>
+                        </div>
+                        <div class="w-full p-4 mb-10 border-2 rounded-md postContentWrapper bg-postBgColor border-borderColor">
+                            <div class="flex flex-row items-center justify-center w-full gap-1 postImageWrapper">
+                                <img src="images/duck-with-hat.jpg" alt="Image" class="postImage">
+                                <img src="images/duck-no-hat.jpg" alt="Image" class="postImage">
+                            </div>
+                            <div class="flex items-center px-2 mt-3 leading-5 border-2 border-dotted rounded-md postText border-postTitleColor">
+                                <p>even though i messed up a little bit here and there, it turned out pretty cute in the end! after this one, i suddenly took a break from crochet for a while. i was still saving the cute patterns i saw around yet i wasn't making any move on getting my hands on any project. however, recently i've started working on a cute little mailman rabbit pattern and i'll share it once finished!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="hidden list-none postDetailsSection">
+                        <li class="min-h-[36px] flex mb-1.5 border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>pattern by</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <a href="https://www.instagram.com/p/CiX1ZV8uplt">crochetedbyel</a>
+                            </div>
+                        </li>
+                        <li class="min-h-[36px] flex border-2 mb-1.5 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>yarn</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md mb-1.5 border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>other materials</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>tags</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>duck, animal, amigurumi</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="postTabContainer relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor text-accent2TextColor">
+                        <span class="py-0 pl-3 pr-5 postTabText shadow-tabUnfocused">-</span>
+                    </label>
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer postDetailsTabButton bg-accent2BgColor text-accent2TextColor">
+                        <span class="py-0 pl-3 pr-5 detailsTabText shadow-tabUnfocused">details</span>
                     </label>
                     <label for=""
-                        class="relative z-20 flex-initial ml-3 border-r-2 border-double cursor-pointer bg-accent1BgColor border-borderColor"
-                        id="postContentTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabFocused">07-07-23</span>
+                        class="relative flex-initial ml-3 border-r-2 border-double cursor-pointer z-5 bg-accent1BgColor border-borderColor postContentTabButton">
+                        <span class="py-0 pl-3 pr-5 mainTabText shadow-tabFocused">31-05-23</span>
                     </label>
                 </div>
-                <div id="postBodyContainer"
-                    class="relative z-10 flex flex-col w-full gap-2 p-2 min-h-fit shadow-postBorder bg-accent1BgColor">
-                    <div id="postTitle" class="flex flex-row items-center justify-center w-full h-8">
-                        <img src="images/yarn.png" alt="" class="mx-2">
-                        <span
-                            class="flex items-center w-full px-5 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">duck with a hat and bag</span>
-                    </div>
-                    <div id="postContentWrapper" class="w-full p-4 border-2 rounded-md bg-postBgColor border-borderColor">
-                        <div id="postImageWrapper" class="flex flex-row items-center justify-center w-full gap-1">
-                            <img src="images/duck-with-hat.jpg" alt="Image" class="" id="postImage">
-                            <img src="images/duck-no-hat.jpg" alt="Image" class="" id="postImage">
+                <div class="relative flex flex-col w-full p-2 mb-20 postBodyContainer min-h-fit shadow-postBorder bg-accent1BgColor">
+                    <div class="postMainSection">
+                        <div class="flex flex-row items-center justify-center w-full h-8 mb-2 postTitle">
+                            <img src="images/yarn.png" alt="" class="mx-2">
+                            <span
+                                class="flex items-center w-full px-4 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">avocowdo</span>
                         </div>
-                        <div class="flex items-center px-2 mt-3 border-2 border-dotted rounded-md border-postTitleColor" id="postText">
-                            <p>even though i messed up a little bit here and there, it turned out pretty cute in the end! after this one, i suddenly took a break from crochet for a while. i was still saving the cute patterns i saw around yet i wasn't making any move on getting my hands on any project. however, recently i've started working on a cute little mailman rabbit pattern and i'll share it once finished!</p>
+                        <div class="w-full p-4 border-2 rounded-md postContentWrapper bg-postBgColor border-borderColor">
+                            <div class="flex flex-row items-center justify-center w-full gap-1 postImageWrapper">
+                                <img src="images/avocowdo-with-seed.jpg" alt="Image" class="postImage">
+                                <img src="images/avocowdo-without-seed.jpg" alt="Image" class="postImage">
+                            </div>
+                            <div class="flex items-center px-2 mt-3 leading-5 border-2 border-dotted rounded-md postText border-postTitleColor">
+                                <p>i'm not even gonna lie, this one nearly drove me mad. since it has a perfectly-defined
+                                    shape, if you get a few stitches wrong it definitely affects the final shape. also this
+                                    was my first time connecting two big pieces. still managed to make it look cute though,
+                                    so we can say it was a success!</p>
+                            </div>
                         </div>
                     </div>
+                    <ul class="hidden list-none postDetailsSection">
+                        <li class="min-h-[36px] flex mb-1.5 border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>pattern by</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <a href="https://www.instagram.com/p/CiX1ZV8uplt">crochetedbyel</a>
+                            </div>
+                        </li>
+                        <li class="min-h-[36px] flex border-2 mb-1.5 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>yarn</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md mb-1.5 border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>other materials</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>tags</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>duck, animal, amigurumi</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div id="postTabContainer" class="mt-20 relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor" id="">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">-</span>
+    
+                <div class="postTabContainer relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor text-accent2TextColor" id="">
+                        <span class="py-0 pl-3 pr-5 shadow-tabUnfocused postTabText">-</span>
                     </label>
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor"
-                        id="postDetailsTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">details</span>
+                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer postDetailsTabButton bg-accent2BgColor text-accent2TextColor">
+                        <span class="py-0 pl-3 pr-5 detailsTabText shadow-tabUnfocused text-accent2TextColor">details</span>
                     </label>
                     <label for=""
-                        class="relative z-20 flex-initial ml-3 border-r-2 border-double cursor-pointer bg-accent1BgColor border-borderColor"
-                        id="postContentTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabFocused">07-07-23</span>
+                        class="relative flex-initial ml-3 border-r-2 border-double cursor-pointer z-5 bg-accent1BgColor border-borderColor postContentTabButton">
+                        <span class="py-0 pl-3 pr-5 mainTabText shadow-tabFocused">14-05-23</span>
                     </label>
                 </div>
-                <div id="postBodyContainer"
-                    class="relative z-10 flex flex-col w-full gap-2 p-2 min-h-fit shadow-postBorder bg-accent1BgColor">
-                    <div id="postTitle" class="flex flex-row items-center justify-center w-full h-8">
-                        <img src="images/yarn.png" alt="" class="mx-2">
-                        <span
-                            class="flex items-center w-full px-5 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">duck with a hat and bag</span>
-                    </div>
-                    <div id="postContentWrapper" class="w-full p-4 border-2 rounded-md bg-postBgColor border-borderColor">
-                        <div id="postImageWrapper" class="flex flex-row items-center justify-center w-full gap-1">
-                            <img src="images/duck-with-hat.jpg" alt="Image" class="" id="postImage">
-                            <img src="images/duck-no-hat.jpg" alt="Image" class="" id="postImage">
+                <div class="relative flex flex-col w-full p-2 mb-20 postBodyContainer min-h-fit shadow-postBorder bg-accent1BgColor">
+                    <div class="postMainSection">
+                        <div class="flex flex-row items-center justify-center w-full h-8 mb-2 postTitle">
+                            <img src="images/yarn.png" alt="" class="mx-2">
+                            <span
+                                class="flex items-center w-full px-4 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">golang
+                                mascot gopher</span>
                         </div>
-                        <div class="flex items-center px-2 mt-3 border-2 border-dotted rounded-md border-postTitleColor" id="postText">
-                            <p>even though i messed up a little bit here and there, it turned out pretty cute in the end! after this one, i suddenly took a break from crochet for a while. i was still saving the cute patterns i saw around yet i wasn't making any move on getting my hands on any project. however, recently i've started working on a cute little mailman rabbit pattern and i'll share it once finished!</p>
+                        <div class="w-full p-4 border-2 rounded-md bg-postBgColor border-borderColor postContentWrapper">
+                            <div class="postImageWrapper flex flex-row items-center justify-center w-full h-[360px] gap-1">
+                                <img src="images/gopher.jpg" alt="Image" class="object-cover w-full h-full postImage">
+                                <img src="images/gopher-gift.jpg" alt="Image" class="object-cover w-full h-full postImage">
+                            </div>
+                            <div class="flex items-center px-2 mt-3 leading-5 border-2 border-dotted rounded-md border-postTitleColor postText">
+                                <p>this was a gift for my friend who is a software developer. as cute and goofy as the
+                                    gopher is, the process was challenging for me because i couldn't find a pattern i could
+                                    follow exactly and i was a little (yeah sure, a little) stressed about making it perfect
+                                    since it was a gift. but yeah, as you can see on the second picture, the gopher is in
+                                    its new home now looking super happy!</p>
+                            </div>
                         </div>
                     </div>
+                    <ul class="hidden list-none postDetailsSection">
+                        <li class="min-h-[36px] flex mb-1.5 border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>pattern by</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <a href="https://www.instagram.com/p/CiX1ZV8uplt">crochetedbyel</a>
+                            </div>
+                        </li>
+                        <li class="min-h-[36px] flex border-2 mb-1.5 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>yarn</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md mb-1.5 border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>other materials</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
+                            </div>
+                        </li>
+                        <li class="flex border-2 rounded-md border-borderColor bg-postBgColor">
+                            <div
+                                class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                                <span>tags</span>
+                            </div>
+                            <div class="flex items-center px-3 leading-tight w-96">
+                                <span>duck, animal, amigurumi</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div id="postTabContainer" class="mt-20 relative flex justify-end pr-1 h-5.5 overflow-hidden w-[calc(100%+6px)]">
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor" id="">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">-</span>
-                    </label>
-                    <label for="" class="relative flex-initial p-0 ml-3 cursor-pointer bg-accent2BgColor"
-                        id="postDetailsTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabUnfocused">details</span>
-                    </label>
-                    <label for=""
-                        class="relative z-20 flex-initial ml-3 border-r-2 border-double cursor-pointer bg-accent1BgColor border-borderColor"
-                        id="postContentTabButton">
-                        <span id="postTabText" class="py-0 pl-3 pr-5 shadow-tabFocused">07-07-23</span>
-                    </label>
-                </div>
-                <div id="postBodyContainer"
-                    class="relative z-10 flex flex-col w-full gap-2 p-2 min-h-fit shadow-postBorder bg-accent1BgColor">
-                    <div id="postTitle" class="flex flex-row items-center justify-center w-full h-8">
-                        <img src="images/yarn.png" alt="" class="mx-2">
-                        <span
-                            class="flex items-center w-full px-5 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">duck with a hat and bag</span>
-                    </div>
-                    <div id="postContentWrapper" class="w-full p-4 border-2 rounded-md bg-postBgColor border-borderColor">
-                        <div id="postImageWrapper" class="flex flex-row items-center justify-center w-full gap-1">
-                            <img src="images/duck-with-hat.jpg" alt="Image" class="" id="postImage">
-                            <img src="images/duck-no-hat.jpg" alt="Image" class="" id="postImage">
-                        </div>
-                        <div class="flex items-center px-2 mt-3 border-2 border-dotted rounded-md border-postTitleColor" id="postText">
-                            <p>even though i messed up a little bit here and there, it turned out pretty cute in the end! after this one, i suddenly took a break from crochet for a while. i was still saving the cute patterns i saw around yet i wasn't making any move on getting my hands on any project. however, recently i've started working on a cute little mailman rabbit pattern and i'll share it once finished!</p>
-                        </div>
-                    </div>
-                </div>
-                
+    
             </section>
         </div>
-
+    
         <script src="script.js"></script>
     </body>
     

@@ -568,6 +568,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -616,6 +620,10 @@ video {
   z-index: 20;
 }
 
+.z-5 {
+  z-index: 5;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -625,8 +633,24 @@ video {
   margin-right: 0.5rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-6 {
@@ -657,6 +681,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -681,12 +709,24 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[360px\] {
+  height: 360px;
+}
+
 .h-\[560px\] {
   height: 560px;
 }
 
-.h-screen {
-  height: 100vh;
+.h-full {
+  height: 100%;
+}
+
+.min-h-\[36px\] {
+  min-height: 36px;
 }
 
 .min-h-fit {
@@ -730,6 +770,10 @@ video {
   width: 18rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-\[240px\] {
   width: 240px;
 }
@@ -746,16 +790,16 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .flex-initial {
   flex: 0 1 auto;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .flex-row {
@@ -780,10 +824,6 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -854,6 +894,11 @@ video {
   background-color: var(--postTitleBgColor);
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -879,9 +924,14 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-0 {
@@ -909,6 +959,11 @@ video {
   font-family: VT323;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -919,12 +974,32 @@ video {
   line-height: 1.25rem;
 }
 
-.text-bodyTextColor {
-  color: var(--bodyTextColor);
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.text-accent1TextColor {
+  color: var(--accent1TextColor);
+}
+
+.text-accent2TextColor {
+  color: var(--accent2TextColor);
 }
 
 .text-postTitleColor {
   color: var(--postTitleColor);
+}
+
+.placeholder-accent2TextColor::-moz-placeholder {
+  color: var(--accent2TextColor);
+}
+
+.placeholder-accent2TextColor::placeholder {
+  color: var(--accent2TextColor);
 }
 
 .shadow-postBorder {
@@ -963,7 +1038,8 @@ video {
   --borderColor: rgb(131, 156, 153);
   --bodyBgColor: rgb(249, 238, 221);
   --postBgColor: rgb(255, 255, 255);
-  --bodyTextColor: rgb(101, 119, 122);
+  --accent1TextColor: rgb(117, 133, 136);
+  --accent2TextColor: rgb(255, 255, 255);
   --postTitleColor: rgb(76, 101, 105);
   --postTitleBgColor: rgb(255, 240, 205);
 }

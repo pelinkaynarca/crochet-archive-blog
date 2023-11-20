@@ -8,7 +8,8 @@
     --borderColor: rgb(131, 156, 153);
     --bodyBgColor: rgb(249, 238, 221);
     --postBgColor: rgb(255, 255, 255);
-    --bodyTextColor: rgb(101, 119, 122);
+    --accent1TextColor: rgb(117, 133, 136);
+    --accent2TextColor: rgb(255, 255, 255);
     --postTitleColor: rgb(76, 101, 105);
     --postTitleBgColor: rgb(255, 240, 205);
   }
