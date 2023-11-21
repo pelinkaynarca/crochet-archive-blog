@@ -13,7 +13,7 @@ module.exports = {
       'postTitleColor': 'var(--postTitleColor)',
       'postTitleBgColor': 'var(--postTitleBgColor)',
       },
-
+      
     boxShadow: {
       'tabUnfocused': '2px 4px 0 var(--accent2BgColor), 0 -2px 0 var(--accent2BgColor), 2px 0 0 var(--accent2BgColor), -2px 0 0 var(--accent2BgColor), -4px 2px 0 var(--accent2BgColor), -6px 4px 0 var(--accent2BgColor), -8px 6px 0 var(--accent2BgColor), -10px 8px 0 var(--accent2BgColor), -12px 10px 0 var(--accent2BgColor), -14px 12px 0 var(--accent2BgColor), -16px 14px 0 var(--accent2BgColor), -18px 16px 0 var(--accent2BgColor), -20px 18px 0 var(--accent2BgColor), 4px 0 0 var(--borderColor), 0 -4px 0 var(--borderColor), 2px -2px 0 var(--borderColor), -2px -2px 0 var(--borderColor), -4px 0 0 var(--borderColor), -6px 2px 0 var(--borderColor), -8px 4px 0 var(--borderColor), -10px 6px 0 var(--borderColor), -12px 8px 0 var(--borderColor), -14px 10px 0 var(--borderColor), -16px 12px 0 var(--borderColor), -18px 14px 0 var(--borderColor), -20px 16px 0 var(--borderColor)',
 
@@ -31,8 +31,7 @@ module.exports = {
     },
       extend: {
         zIndex: {
-          '5':'5',
-          '3':'3'
+          '5':'5'
         },
         height: {
           '5.5': '24px',

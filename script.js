@@ -11,7 +11,7 @@ if (postImages.length >= 2) {
 
 const postDetailsTabButton = document.getElementsByClassName('postDetailsTabButton');
 const detailsTabText = document.getElementsByClassName('detailsTabText');
-const postContentTabButton = document.getElementsByClassName('postContentTabButton');
+const postMainTabButton = document.getElementsByClassName('postMainTabButton');
 const mainTabText = document.getElementsByClassName('mainTabText');
 const postDetailsSection = document.getElementsByClassName('postDetailsSection');
 const postMainSection = document.getElementsByClassName('postMainSection');
@@ -38,20 +38,20 @@ function tabChangeToPostDetails(index) {
     // change the style of the mainTab as the unfocused one
     mainTabText[index].classList.replace('shadow-tabFocused', 'shadow-tabUnfocused');
 
-    postContentTabButton[index].classList.replace('bg-accent1BgColor','bg-accent2BgColor');
+    postMainTabButton[index].classList.replace('bg-accent1BgColor','bg-accent2BgColor');
 
-    postContentTabButton[index].classList.add('text-accent2TextColor');
+    postMainTabButton[index].classList.add('text-accent2TextColor');
 
-    postContentTabButton[index].classList.remove('z-5');
+    postMainTabButton[index].classList.remove('z-5');
     // hide the main section of the clicked button's post
     postMainSection[index].style.display = 'none';
     // show the details section of the clicked button's post
     postDetailsSection[index].style.display = 'block';
 }
 
-// loop through each postContentTabButton and add an event listener
-for (let i = 0; i < postContentTabButton.length; i++) {
-    postContentTabButton[i].addEventListener("click", function() {
+// loop through each postMainContentTabButton and add an event listener
+for (let i = 0; i < postMainTabButton.length; i++) {
+    postMainTabButton[i].addEventListener("click", function() {
         // call the tabChangeToMainSection function with the index of the clicked button
         tabChangeToMainSection(i);
     });
@@ -62,11 +62,11 @@ function tabChangeToMainSection(index) {
     // change the style of the mainTab as the focused one
     mainTabText[index].classList.replace('shadow-tabUnfocused', 'shadow-tabFocused');
 
-    postContentTabButton[index].classList.replace('bg-accent2BgColor','bg-accent1BgColor');
+    postMainTabButton[index].classList.replace('bg-accent2BgColor','bg-accent1BgColor');
 
-    postContentTabButton[index].classList.replace('text-accent2TextColor','accent1TextColor');
+    postMainTabButton[index].classList.replace('text-accent2TextColor','accent1TextColor');
 
-    postContentTabButton[index].classList.add('z-5');
+    postMainTabButton[index].classList.add('z-5');
 
     // change the style of the detailsTab as the unfocused one
     detailsTabText[index].classList.replace('shadow-tabFocused', 'shadow-tabUnfocused');
