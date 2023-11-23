@@ -568,8 +568,8 @@ video {
   }
 }
 
-.invisible {
-  visibility: hidden;
+.visible {
+  visibility: visible;
 }
 
 .fixed {
@@ -980,6 +980,10 @@ video {
 
 .text-postTitleColor {
   color: var(--postTitleColor);
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .placeholder-accent2TextColor::-moz-placeholder {

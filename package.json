@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31"
+    "postcss": "^8.4.31",
+    "rough-notation": "^0.5.1"
   }
 }
