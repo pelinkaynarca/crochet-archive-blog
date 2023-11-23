@@ -113,4 +113,16 @@ function tabChangeToMainSection(index) {
     });
 }
 
+// sidebar tab change
+
+const sidebarTextBox = document.getElementById('sidebarTextBox')
+const sidebarSocialsSection = document.getElementById('sidebarSocialsSection')
+const sidebarSocialsButton = document.getElementById('sidebarSocialsButton')
+
+sidebarSocialsButton.addEventListener("click", function() {
+    sidebarTextBox.style.display = "none";
+    sidebarSocialsSection.style.display = "flex";
+})
+
+
 

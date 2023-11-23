@@ -15,7 +15,7 @@
     <script type="module" src="https://unpkg.com/rough-notation?module"></script>
 </head>
 
-<body class="p-0 m-0 bg-bodyBgColor font-primary text-accent1TextColor">
+<body class="p-0 m-0 bg-bodyBgColor font-primary text-accent1TextColor animate-fadeInAnimation">
     <svg width="0" height="0">
         <defs>
             <path id="circleTextPath"
@@ -43,7 +43,7 @@
             </div>
             <div class="relative block p-1 mb-10 text-center w-44 shadow-sbTitle bg-postBgColor">
                 <div class="relative p-0.5" id="sidebarTitleText">
-                    <span>a wild pelin appears!</span>
+                    <span>gotta crochet 'em all!</span>
                 </div>
             </div>
             <div class="block w-full p-2 bg-accent1BgColor shadow-sbInfoBox" id="sidebarInfoBox">
@@ -52,26 +52,24 @@
                         class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor">
                         <img src="images/home.png" alt="home" class="w-3.5">
                     </a>
-                    <!-- JS ile basınca diğer linkleri açsın!! -->
-                    <a href=""
+                    <button
                         class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor"
-                        id="sbSocialsButton">
-                        <img src="images/socials.png" alt="home" class="w-3.5">
-                    </a>
+                        id="sidebarSocialsButton">
+                        <img src="images/socials.png" alt="socials" class="w-3.5">
+                    </button>
                     <div class="">
                         <input type="text" placeholder="search..."
-                            class="w-32 px-2 text-base border-2 rounded-full text-accent2TextColor placeholder-accent2TextColor border-borderColor bg-accent2BgColor">
+                            class="w-32 px-2 text-base border-2 rounded-full text-accent2TextColor placeholder-accent2TextColor border-borderColor bg-accent2BgColor focus:outline-none focus:placeholder:opacity-0">
                     </div>
                     <a href="/"
                         class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor">
                         <img src="images/hashtag.png" alt="home" class="w-3.5">
                     </a>
                 </div>
-                <div class="flex hidden p-2 text-center border-2 rounded-md bg-postBgColor border-borderColor">
-                    <span>lorem ipsum dolor sit amet consectetur, adipisicing elit. sit placeat enim dicta in
-                        accusantium, voluptas inventore</span>
+                <div class="flex p-3 text-base leading-4 text-center border-2 rounded-md h-fit bg-postBgColor border-borderColor" id="sidebarTextBox">
+                    <span>step into my digital crochet archive, where i am not only showcasing my finished crochet works but also coded every bit of the website! you may also find some amazing free patterns i have bookmarked along the way.</span>
                 </div>
-                <ul id="sidebarSocialsSection" class="flex flex-col gap-1 text-base">
+                <ul id="sidebarSocialsSection" class="flex-col hidden gap-1 text-base">
                     <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">crochet instagram</a></li>
                     <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">linkedin</a></li>
                     <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">github</a></li>

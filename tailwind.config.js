@@ -36,6 +36,15 @@ module.exports = {
         height: {
           '5.5': '24px',
         },
+        keyframes: {
+          fadeInAnimation: {
+            '0%': { opacity: '0' },
+            '100%': { opacity: '1'},
+          }
+        },
+        animation: {
+          'fadeInAnimation': 'fadeInAnimation ease 2.5s'
+        }
         }
       }
     };
