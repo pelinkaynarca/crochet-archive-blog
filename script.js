@@ -60,7 +60,7 @@ function tabChangeToPostDetails(index) {
         if (!annotationMap.has(link)) {
             const annotation = annotate(link, {
                 type: 'underline',
-                color: 'orange',
+                color: 'LightSalmon',
                 strokeWidth: 3,
                 padding: 1,
                 animationDuration: 900,
@@ -123,6 +123,3 @@ sidebarSocialsButton.addEventListener("click", function() {
     sidebarTextBox.style.display = "none";
     sidebarSocialsSection.style.display = "flex";
 })
-
-
-

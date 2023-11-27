@@ -12,6 +12,8 @@ module.exports = {
       'accent2TextColor': 'var(--accent2TextColor)',
       'postTitleColor': 'var(--postTitleColor)',
       'postTitleBgColor': 'var(--postTitleBgColor)',
+      'boxShadowColor': 'var(--boxShadowColor)',
+      'sidebarIconBgColor': 'var(--sidebarIconBgColor)'
       },
       
     boxShadow: {
@@ -44,7 +46,14 @@ module.exports = {
         },
         animation: {
           'fadeInAnimation': 'fadeInAnimation ease 2.5s'
-        }
+        },
+        backgroundImage: {
+          'sidebarIcon': "url('./images/icon.png')",
+        },
+        backgroundSize: {
+          '115': '115%',
+          '117': '117%',
         }
       }
-    };
+    }
+ };

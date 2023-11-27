@@ -16,37 +16,36 @@
 </head>
 
 <body class="p-0 m-0 bg-bodyBgColor font-primary text-accent1TextColor animate-fadeInAnimation">
+    <noscript>Your browser does not support JavaScript!</noscript>
     <svg width="0" height="0">
-        <defs>
+        <symbol>
             <path id="circleTextPath"
-                d="M97,166c-41.906,0-76-34.093-76-76 c0-41.906,31.094-76,76-76c27.191,0,51.092,5.353,65.524,35.88">
+                d="M99,163c-41.906,0-76-34.093-76-76 c0-41.906,34.094-76,76-76c27.191,0,51.092,14.353,64.524,35.88">
             </path>
-        </defs>
+        </symbol>
     </svg>
-    <div id="container" class="box-border block w-full h-full mt-20">
+    <div id="container" class="box-border block w-full h-full">
         <!-- sidebar -->
-        <aside id="sidebar" class="w-[240px] h-[560px] fixed left-44 flex flex-col items-center text-lg">
+        <aside id="sidebar" class="w-[250px] h-[620px] fixed left-44 top-20 flex flex-col items-center text-lg">
             <!-- sidebar content goes here -->
-            <div id="sidebarImageWrapper"
-                class="relative flex flex-col items-center mb-6 border-4 border-solid rounded-2xl h-72 w-72 border-borderColor">
-                <div class="absolute w-56 h-56 border-2 border-dotted rounded-full bg-accent1BgColor top-10"></div>
-                <svg class="absolute left-0 top-3" id="svg_circle_text" viewBox="0 0 200 40">
+            <div id="sidebarImageWrapper" class="relative flex flex-col items-center mb-2 rounded-2xl h-60 w-60">
+                <svg class="absolute left-0 top-4" id="svgCircleText" viewBox="0 0 200 40">
                     <text>
                         <textPath xlink:href="#circleTextPath">
-                            <tspan class="text-sm" dx="32.7ch">pel's crochet archive</tspan>
+                            <tspan class="text-base text-postTitleColor" dx="27.1ch">pel's crochet archive</tspan>
                         </textPath>
                     </text>
                 </svg>
-                <div class="relative w-64 top-10">
-                    <img src="images/icon.png" alt="image" class="">
+                <div
+                    class="relative w-48 h-48 bg-top border-2 border-dotted rounded-full top-10 bg-sidebarIcon bg-117 bg-sidebarIconBgColor">
                 </div>
             </div>
-            <div class="relative block p-1 mb-10 text-center w-44 shadow-sbTitle bg-postBgColor">
+            <div class="relative block p-1 mb-5 text-center w-44 shadow-sbTitle bg-postBgColor">
                 <div class="relative p-0.5" id="sidebarTitleText">
                     <span>gotta crochet 'em all!</span>
                 </div>
             </div>
-            <div class="block w-full p-2 bg-accent1BgColor shadow-sbInfoBox" id="sidebarInfoBox">
+            <div class="block w-full p-2 mb-5 bg-accent1BgColor shadow-sbInfoBox" id="sidebarInfoBox">
                 <div class="flex flex-row items-center justify-center h-8 gap-1 mb-2" id="sidebarInfoBoxTopSection">
                     <a href="/"
                         class="flex items-center justify-center border-2 rounded-full w-7 h-7 bg-accent2BgColor border-borderColor">
@@ -66,15 +65,27 @@
                         <img src="images/hashtag.png" alt="home" class="w-3.5">
                     </a>
                 </div>
-                <div class="flex p-3 text-base leading-4 text-center border-2 rounded-md h-fit bg-postBgColor border-borderColor" id="sidebarTextBox">
-                    <span>step into my digital crochet archive, where i am not only showcasing my finished crochet works but also coded every bit of the website! you may also find some amazing free patterns i have bookmarked along the way.</span>
+                <div class="flex p-3 mb-2 text-base leading-4 text-center border-2 rounded-md h-fit bg-postBgColor border-borderColor"
+                    id="sidebarTextBox">
+                    <span>step into my digital crochet archive, where i am not only showcasing my finished crochet works
+                        but also coded every bit of the website! you may also find some amazing free patterns i have
+                        bookmarked along the way.</span>
                 </div>
                 <ul id="sidebarSocialsSection" class="flex-col hidden gap-1 text-base">
-                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">crochet instagram</a></li>
-                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">linkedin</a></li>
-                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="#">github</a></li>
-                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a href="mailto: kaynarcapelin@hotmail.com">e-mail</a></li>
+                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a
+                            href="#">crochet instagram</a></li>
+                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a
+                            href="#">linkedin</a></li>
+                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a
+                            href="#">github</a></li>
+                    <li class="flex justify-center border-2 rounded-full border-borderColor bg-postBgColor"><a
+                            href="mailto: kaynarcapelin@hotmail.com">e-mail</a></li>
                 </ul>
+            </div>
+            <div
+                class="flex items-center justify-center h-12 gap-2 px-2 text-lg transition-transform duration-300 ease-in-out border-2 rounded-lg w-52 hover: bg-accent2BgColor shadow-sbTitle text-accent2TextColor border-borderColor hover:scale-105">
+                <a href="./patterns.html" class="flex items-center justify-center">free pattern bookmarks</a>
+                <img src="images/click.png" alt="icon" class="w-5 h-5">
             </div>
         </aside>
         <!-- end of sidebar -->
@@ -100,8 +111,7 @@
                     <div class="flex flex-row items-center justify-center w-full h-8 mb-2 postTitle">
                         <img src="images/yarn.png" alt="" class="mx-2">
                         <span
-                            class="flex items-center w-full px-4 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">duck
-                            with a hat and bag</span>
+                            class="flex items-center w-full px-4 text-lg border-2 text-postTitleColor h-7 border-borderColor bg-postTitleBgColor rounded-2xl">flower duck</span>
                     </div>
                     <div
                         class="w-full p-4 border-2 rounded-md postMainContentWrapper bg-postBgColor border-borderColor">
@@ -126,7 +136,7 @@
                             class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>pattern by</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <a href="https://www.instagram.com/p/CiX1ZV8uplt" class="underlinedLink">crochetedbyel</a>
                         </div>
                     </li>
@@ -135,16 +145,16 @@
                             class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>yarn</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
                         </div>
                     </li>
                     <li class="flex border-2 rounded-md mb-1.5 border-borderColor bg-postBgColor">
                         <div
-                            class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                            class="flex items-center w-32 px-3 py-2 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>other materials</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
                         </div>
                     </li>
@@ -153,7 +163,7 @@
                             class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>tags</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>duck, animal, amigurumi</span>
                         </div>
                     </li>
@@ -203,7 +213,7 @@
                             class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>pattern by</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <a href="https://www.instagram.com/p/CiX1ZV8uplt" class="underlinedLink">crochetedbyel</a>
                         </div>
                     </li>
@@ -212,7 +222,7 @@
                             class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>yarn</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
                         </div>
                     </li>
@@ -221,7 +231,7 @@
                             class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>other materials</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
                         </div>
                     </li>
@@ -230,7 +240,7 @@
                             class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>tags</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>duck, animal, amigurumi</span>
                         </div>
                     </li>
@@ -278,10 +288,11 @@
                 </div>
                 <ul class="hidden list-none postDetailsSection">
                     <li class="min-h-[36px] flex mb-1.5 border-2 rounded-md border-borderColor bg-postBgColor">
-                        <div class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
+                        <div
+                            class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>pattern by</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <a href="https://www.instagram.com/p/CiX1ZV8uplt" class="underlinedLink">crochetedbyel</a>
                         </div>
                     </li>
@@ -290,7 +301,7 @@
                             class="flex items-center w-32 px-3 border-r-2 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>yarn</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>himalaya velvet: 90005 lilac, 90001 white, 90002 light yellow</span>
                         </div>
                     </li>
@@ -299,7 +310,7 @@
                             class="flex items-center w-32 px-3 border-r-2 h-9 bg-accent2BgColor text-accent2TextColor border-borderColor">
                             <span>other materials</span>
                         </div>
-                        <div class="flex items-center px-3 leading-tight w-96">
+                        <div class="flex items-center px-3 py-2 leading-4 w-96">
                             <span>4.5 mm hook, 6 mm safety eyes, filling, yarn needle</span>
                         </div>
                     </li>
